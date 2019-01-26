@@ -14,6 +14,9 @@
 		7717E3A621F436320010F1C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7717E3A421F436320010F1C2 /* LaunchScreen.storyboard */; };
 		7717E3B121F436320010F1C2 /* TicTacToeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7717E3B021F436320010F1C2 /* TicTacToeTests.swift */; };
 		7717E3BC21F436320010F1C2 /* TicTacToeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7717E3BB21F436320010F1C2 /* TicTacToeUITests.swift */; };
+		7717E3CD21F43C3B0010F1C2 /* SimpleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7717E3CB21F43C3B0010F1C2 /* SimpleCollectionViewCell.swift */; };
+		7717E3CE21F43C3B0010F1C2 /* SimpleCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7717E3CC21F43C3B0010F1C2 /* SimpleCollectionViewCell.xib */; };
+		77B3D27221FCCB4700501AF1 /* TicTacToe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B3D27121FCCB4700501AF1 /* TicTacToe.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		7717E3B721F436320010F1C2 /* TicTacToeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TicTacToeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7717E3BB21F436320010F1C2 /* TicTacToeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicTacToeUITests.swift; sourceTree = "<group>"; };
 		7717E3BD21F436320010F1C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7717E3CB21F43C3B0010F1C2 /* SimpleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleCollectionViewCell.swift; sourceTree = "<group>"; };
+		7717E3CC21F43C3B0010F1C2 /* SimpleCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SimpleCollectionViewCell.xib; sourceTree = "<group>"; };
+		77B3D27121FCCB4700501AF1 /* TicTacToe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicTacToe.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +83,8 @@
 		7717E38F21F436310010F1C2 = {
 			isa = PBXGroup;
 			children = (
+				7717E3CB21F43C3B0010F1C2 /* SimpleCollectionViewCell.swift */,
+				7717E3CC21F43C3B0010F1C2 /* SimpleCollectionViewCell.xib */,
 				7717E39A21F436310010F1C2 /* TicTacToe */,
 				7717E3AF21F436320010F1C2 /* TicTacToeTests */,
 				7717E3BA21F436320010F1C2 /* TicTacToeUITests */,
@@ -103,6 +111,7 @@
 				7717E3A221F436320010F1C2 /* Assets.xcassets */,
 				7717E3A421F436320010F1C2 /* LaunchScreen.storyboard */,
 				7717E3A721F436320010F1C2 /* Info.plist */,
+				77B3D27121FCCB4700501AF1 /* TicTacToe.swift */,
 			);
 			path = TicTacToe;
 			sourceTree = "<group>";
@@ -231,6 +240,7 @@
 			files = (
 				7717E3A621F436320010F1C2 /* LaunchScreen.storyboard in Resources */,
 				7717E3A321F436320010F1C2 /* Assets.xcassets in Resources */,
+				7717E3CE21F43C3B0010F1C2 /* SimpleCollectionViewCell.xib in Resources */,
 				7717E3A121F436310010F1C2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -256,7 +266,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7717E3CD21F43C3B0010F1C2 /* SimpleCollectionViewCell.swift in Sources */,
 				7717E39E21F436310010F1C2 /* ViewController.swift in Sources */,
+				77B3D27221FCCB4700501AF1 /* TicTacToe.swift in Sources */,
 				7717E39C21F436310010F1C2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -442,7 +454,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Mudgil.TicTacToe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -460,7 +472,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Mudgil.TicTacToe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

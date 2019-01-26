@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="SimpleCollectionViewCell" customModule="TicTacToe" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="492" height="230"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="492" height="230"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PGy-Xe-bOM">
+                        <rect key="frame" x="0.0" y="0.0" width="492" height="230"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ikw-yB-YzD">
+                                <rect key="frame" x="5" y="5" width="482" height="220"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.1857388616" blue="0.57339501380000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ikw-yB-YzD" firstAttribute="leading" secondItem="PGy-Xe-bOM" secondAttribute="leading" constant="5" id="Ldl-Sc-LqD"/>
+                            <constraint firstAttribute="bottom" secondItem="ikw-yB-YzD" secondAttribute="bottom" constant="5" id="MaM-yG-61G"/>
+                            <constraint firstItem="ikw-yB-YzD" firstAttribute="top" secondItem="PGy-Xe-bOM" secondAttribute="top" constant="5" id="f9A-bN-96c"/>
+                            <constraint firstAttribute="trailing" secondItem="ikw-yB-YzD" secondAttribute="trailing" constant="5" id="gWH-5q-VfS"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="PGy-Xe-bOM" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="XWW-Bt-GQp"/>
+                <constraint firstAttribute="trailing" secondItem="PGy-Xe-bOM" secondAttribute="trailing" id="ZVU-Uk-yhY"/>
+                <constraint firstAttribute="bottom" secondItem="PGy-Xe-bOM" secondAttribute="bottom" id="b5w-U0-bme"/>
+                <constraint firstItem="PGy-Xe-bOM" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="cHd-b0-tE7"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="492" height="230"/>
+            <connections>
+                <outlet property="imageView" destination="ikw-yB-YzD" id="55a-9x-bm5"/>
+            </connections>
+            <point key="canvasLocation" x="510.39999999999998" y="129.53523238380811"/>
+        </collectionViewCell>
+    </objects>
+</document>
